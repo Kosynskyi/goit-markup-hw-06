@@ -815,6 +815,7 @@ img {
   line-height: 1.9;
   letter-spacing: 0.06em;
   color: #ffffff;
+  cursor: pointer;
 }
 .button-subscribe::after {
   content: "";
