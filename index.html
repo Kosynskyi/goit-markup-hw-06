@@ -61,8 +61,8 @@
           </button>
           <!-- модальное окно -->
           <div class="backdrop is-hidden" data-modal>
-            <div>
-              <form class="modal">
+            <div class="modal">
+              <form>
                 <b class="modal-title"
                   >Оставьте свои данные, мы вам перезвоним</b
                 >
@@ -124,14 +124,17 @@
                 <button class="button button-send" type="button">
                   Отправить
                 </button>
-
-                <button class="button-close" type="button" data-modal-close>
+                <!-- <button class="button-close" type="button" data-modal-close>
                   <svg class="modal-close" width="11" height="11">
                     <use href="./images/icons/sprite.svg#close"></use>
                   </svg>
-                </button>
+                </button> -->
               </form>
-            </div>
+            <button class="button-close" type="button" data-modal-close>
+              <svg class="modal-close" width="11" height="11">
+                <use href="./images/icons/sprite.svg#close"></use>
+              </svg>
+            </button>
           </div>
         </div>
       </section>
@@ -672,9 +675,8 @@
         <div class="subscribe">
           <h3 class="footer-title">Подпишитесь на рассылку</h3>
           <form class="subscribe-thumb">
-            <div class="subscribe-item">
-              <input type="email" name="email" placeholder="E-mail" />
-            </div>
+            <input class="subscribe-item type="email" name="email"
+            placeholder="E-mail" />
             <button class="button-subscribe" type="submit">
               <svg class="button-icon" width="24" height="24">
                 <use href="./images/icons/sprite.svg#send-icon"></use>
