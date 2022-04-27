@@ -354,6 +354,10 @@ img {
   width: 100%;
   resize: none;
   padding: 12px 16px;
+  color: var(--title-text-color);
+}
+.feedback::placeholder {
+  color: rgba(117, 117, 117, 0.5);
 }
 /* оформление чекбокса */
 
