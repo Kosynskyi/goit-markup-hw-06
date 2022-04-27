@@ -367,6 +367,8 @@ img {
 
 .agreement {
   appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
 }
 
 .agreement:checked + .vector > .check-icon {
@@ -394,7 +396,7 @@ img {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  padding: auto;
+  /* padding: auto; */
   width: 200px;
   height: 50px;
   font-weight: 700;
