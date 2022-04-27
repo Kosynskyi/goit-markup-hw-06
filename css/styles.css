@@ -265,8 +265,8 @@ img {
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  min-height: 528px;
-  min-width: 581px;
+  min-width: 528px;
+  min-height: 581px;
   padding: 40px;
   background-color: var(--bg-white-color);
   border-radius: 4px;
@@ -302,12 +302,15 @@ img {
 }
 /* оформление форм */
 .modal-title {
+  display: block;
+  /* outline: 1px solid red; */
   margin-top: 0;
   margin-bottom: 12px;
   font-weight: 700;
   font-size: 20px;
   line-height: 1.15;
-  text-align: center;
+  letter-spacing: 0.03em;
+  text-align: justify;
   color: var(--title-text-color);
 }
 .modal-item:not(:last-child) {
@@ -360,6 +363,9 @@ img {
   text-align: left;
 }
 .feedback {
+  display: block;
+  width: 448px;
+  height: 120px;
   line-height: 1.14;
   letter-spacing: 0.01em;
   width: 100%;
@@ -793,21 +799,20 @@ img {
 .subscribe-item {
   margin-right: 12px;
 }
-.subscribe-thumb input {
+.subscribe-thumb > input {
   display: inline-block;
   width: 358px;
   height: 50px;
-  padding: 15px;
+  padding: 15px 16px;
   background-color: #2f303a;
   border: 1px solid rgba(255, 255, 255, 0.3);
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
   color: rgba(255, 255, 255, 0.6);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.subscribe-thumb input:hover,
-.subscribe-thumb input:focus,
-.subscribe-thumb input:active {
+.subscribe-thumb > input:hover,
+.subscribe-thumb > input:focus,
+.subscribe-thumb > input:active {
   color: var(--bg-white-color);
 }
 .subscribe-thumb input::placeholder {
